@@ -1,0 +1,37 @@
+---
+"Aula 6"
+"importar dados"
+---
+
+
+```{r}
+#install.packages("openxlsx")
+library(openxlsx)
+getwd()
+```
+
+
+```{r}
+#Texto
+#O header serve para saber se a primeira linha do arquivo é um cabeçalho
+#read.csv(lugar_do_arquivo, header = TRUE, sep = ",")
+texto = read.csv(file.choose(), header = TRUE, sep = ",")
+texto
+texto = read.csv("../dados/Credit.csv", header = TRUE, sep = ",")
+texto
+```
+
+
+```{r}
+#Excel
+#read.xlsx(lugar_do_arquivo, qual_planilha_usar)
+dados = read.xlsx("../dados/Credit.xlsx", sheet = 1)
+dados
+```
+
+
+```{r}
+class(texto)
+class(dados)
+```
+

@@ -1,0 +1,44 @@
+---
+"Aula 2"
+"Aspectos gerais "
+---
+
+```{r}
+#Diretório de trabalho
+setwd("C:/Users/lufim/Documents/GitHub/Data_Science_R/introdução/aulas/")
+getwd()
+```
+
+
+```{r}
+#Tipo do objeto
+class(iris)
+```
+
+
+```{r}
+#Salvar um objeto
+#clonar
+iristeste = iris
+#Salvar
+save(iristeste, file="iristeste.Rdata")
+#Remover do r
+rm(iristeste)
+```
+
+
+```{r}
+#Carregar um objeto
+load(file="iristeste.Rdata")
+#teste
+iristeste
+```
+
+
+```{r}
+#Vetor e Gráfico básico
+x = c(12, 34, 56, 79) #Eixo x
+y = c(1, 6, 9, 14) #Eixo y
+plot(x,y)
+```
+

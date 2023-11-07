@@ -1,0 +1,84 @@
+---
+"Aula 4"
+"Estrutura de dados"
+---
+
+
+```{r}
+#Vetores (Só possui um tipo)
+vetor = c(1, 2, 3, 4, 5)
+vetor
+vetor[1]
+vetor[1] = 10
+vetor[1]
+```
+
+
+```{r}
+#Vetores de outros tipos
+vetor_inteiro = c(10L, 20L, 30L, 40L, 50L)
+vetor_inteiro
+vetor_caractere = c("n", "o", "k", "i")
+vetor_caractere
+#A classe de um vetor é o tipo de dado que esta nele
+class(vetor_inteiro)
+class(vetor_caractere)
+```
+
+
+```{r}
+#Matrizes (Só pode haver um tipo de dado)
+VADeaths #Matriz que já vem com o R igual a iris
+colnames(VADeaths)
+rownames(VADeaths)
+```
+
+
+```{r}
+#Só coluna 1
+VADeaths[1:5,1]
+#Só linha 1
+VADeaths[1,]
+#Linha 1 até a 3
+VADeaths[1:3,]
+#Coluna 1 até a 2
+VADeaths[,1:2]
+#Escolheras linhas e colunas que vc quer usar, só usar um vetor
+VADeaths[c(1, 3, 5), c(1, 3)]
+```
+
+
+```{r}
+#Data frame (pode ter mais de um tipo de dados)
+longley #Data Frame que já vem com o R
+#Funciona como nas matrizes(podemos controlar as linhas e colunas que vão aparecer)
+longley[1:5, 4:6]
+#Acessar uma coluna pelo seu nome
+longley$Unemployed #Entrega como um vetor
+#Ou por nome
+longley["Unemployed"] #Entrega como uma coluna
+```
+
+
+```{r}
+#Listas (Agrupar dados de um mesmo estudo)
+ability.cov #Lista ja instalada no R
+#Podemos acessar por nome ou vetor
+ability.cov$cov
+ability.cov[1]
+#Verificar que são objetos diferentes
+class(ability.cov$cov)
+class(ability.cov$center)
+#acessar o elemento dentro da lista
+ability.cov$cov[,1:3]
+```
+
+
+```{r}
+#Fatores
+#São variaveis categoricas(nominais = não possuem ordem de grandeza / ordinais = Podem ter ordem de grandeza)
+#Ele sabe que os valores se referem a mesma variavel
+#Podem ter ordem de grandeza
+state.region 
+```
+

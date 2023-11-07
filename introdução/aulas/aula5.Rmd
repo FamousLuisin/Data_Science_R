@@ -1,0 +1,61 @@
+---
+"Aula 5"
+"Funções"
+---
+
+
+```{r}
+#Principais Funções
+#head entrega os primeiro registros de um conjunto de dados
+head(esoph)
+head(esoph, n=10) #Podemos passar também quantos registros nos queremos
+
+#tail entrega os ultimos registros de um conjunto de dados
+tail(esoph)
+tail(esoph, n=10) #Podemos passar também quantos registros nos queremos
+```
+
+
+```{r}
+#dim mostra o nome de linhas e colunas de uma base de dados
+dim(esoph)
+#para acessar apenas as linhas
+dim(esoph)[1]
+#para acessar apenas as colunas
+dim(esoph)[2]
+```
+
+```{r}
+#length entrega o comprimento do conjunto de dados
+#se for um conjunto bidimensional entrega o numero de colunas
+length(islands)
+```
+
+
+```{r}
+#colnames nomes das colunas
+colnames(esoph)
+```
+
+
+```{r}
+#rownames Nome das linhas
+rownames(esoph)
+```
+
+
+```{r}
+#summary entrega algumas estaticas de um conjunto de dados
+#Resumo
+summary(esoph)
+#Colunas categóricas entrega as instancias delas
+#Colunas numéricas entrega (min/max valor, o primeiro, segundo(mediana) e terceiro quartil, média)
+```
+
+
+```{r}
+#Escolher arquivos
+arquivo = file.choose()
+arquivo
+```
+

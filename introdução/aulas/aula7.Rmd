@@ -1,0 +1,62 @@
+---
+"Aula 7"
+"Estruturas de progremação"
+---
+
+
+```{r}
+#if e else
+a = 10
+b = 20
+if(a < b){
+  print(TRUE)
+}else{
+  print(FALSE)
+}
+```
+
+
+```{r}
+#ifelse
+x = ifelse(a > 10, TRUE, FALSE)
+x
+```
+
+
+```{r}
+#for
+for (i in 1:10) {
+  print(i)
+}
+```
+
+
+```{r}
+#for
+vetor = c(10, 20, 30, 40, 50)
+for (i in vetor) {
+  print(i)
+}
+```
+
+
+```{r}
+#while
+a = 1
+while (a <= 10) {
+  print(a)
+  a = a + 1
+}
+```
+
+
+```{r}
+#função
+parouimpar <- function(numero){
+  return (ifelse(numero %% 2 == 0, "par", "impar"))
+}
+
+parouimpar(10)
+parouimpar(15)
+```
+

@@ -1,0 +1,62 @@
+---
+"Exercicios"
+---
+
+Exercicio 1
+```{r}
+ana = 8L
+paulo = 12L
+
+ifelse(ana > paulo, "Menina é mais velha", "O menino é mais velho")
+```
+
+Exercicio 2
+```{r}
+class(BOD)
+```
+
+Exercicio 3
+```{r}
+vetor = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+for (variavel in vetor) {
+  if(variavel %% 2 == 0)
+    print(variavel)
+}
+```
+
+Exercicio 4
+```{r}
+tail(women, 10)
+```
+Exercicio 5
+
+```{r}
+sepal = iris[50:100,]["Sepal.Width"]
+petal = iris[50:100,]["Petal.Length"]
+sepal
+petal
+sepal = iris[50:100,]$Sepal.Width
+petal = iris[50:100,]$Petal.Length
+plot(sepal, petal) #Deve passar um vetorial
+```
+
+Exercico 6
+```{r}
+x = c(1, 2, 3)
+y = c(4, 5, 6)
+tamanho = length(x)
+for (i in 1:tamanho) {
+  print(x[i] + y[i])
+}
+```
+
+Exercicio 7
+```{r}
+CO2
+dim(CO2)[1]
+rownames(CO2)
+
+dim(CO2)[2]
+colnames(CO2)
+```
+

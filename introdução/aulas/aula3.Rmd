@@ -1,0 +1,48 @@
+---
+"Aula 3"
+"Tipos de dados e Operadores"
+---
+
+
+```{r}
+#Declaração numérica float
+delta = 8
+class(delta)
+```
+
+
+```{r}
+#Declaração numérica inteira
+delta = 8L
+class(delta)
+```
+
+
+```{r}
+#Declaração True/False e String
+logico = TRUE
+logico = F
+caractere = "Texto"
+caractere = 'Texto'
+class(logico)
+class(caractere)
+```
+
+
+```{r}
+#Operações matemáticas
+x = 2
+y = 5
+(x + y) * y
+z = (x + y) * y
+z
+```
+
+
+```{r}
+a = 1
+b = 2 
+a < b
+a == b
+```
+
